@@ -12,7 +12,6 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const Menu = (props) => {
     return(
         <div className="cards">
-           
          <BootstrapCard/>
           </div>
        )

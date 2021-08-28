@@ -12,7 +12,7 @@ Have you ever wanted ice cream delivered straight to your door, but found yourse
 Well, with Frizzy - the specialized frozen dessert delivery service, any and all useful information pertaining to our dessert products will be available to you on our app.
 <br></br>
 Our goal is to provide a seamless experience for ordering your desserts, while giving you all the allergy and nutritional information you'd want.</p>
- <img className="Patrick" src="https://i.pinimg.com/originals/91/f3/49/91f349982e7a5aff747d6284ae41b7d4.gif"></img>
+ <img className="star" src="https://i.pinimg.com/originals/91/f3/49/91f349982e7a5aff747d6284ae41b7d4.gif"></img>
  <hr></hr>
  <h1>Our Team</h1>
      <div className="team">
