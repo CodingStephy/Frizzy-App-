@@ -63,6 +63,7 @@ button.menu {
 #trashIcon {
   color: grey;
 }
+
 #trashIcon:hover {
   color: red;
 }
@@ -412,6 +413,7 @@ button.menu {
 
 .icecream .cart:hover {
   font-size: 30px;
+  color: red;
 }
 
 .offers .cart {
@@ -423,6 +425,12 @@ button.menu {
   color: white;
   margin: 0 auto;
 }
+
+.offers .cart:hover {
+  font-size: 30px;
+  color: red;
+}
+
 
 /* popsicles */
 .popsicles {
