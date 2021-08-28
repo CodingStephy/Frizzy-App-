@@ -1,10 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Sigmar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Besley:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+
+html {
+  min-height: 100%; /* make sure it is at least as tall as the viewport */
+  position: relative;
+}
+html,
+body {
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  background-color: black;
+  background-size: cover;
+
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+
+body {
+  height: 1024px;
+  background-color: black !important;
+  background-size: cover !important;
+}
+#root {
+  height: 1024px;
+}
+.App .logo {
+  width: 80%;
+  margin-top: -5%;
+  margin-bottom: -14%;
+}
+
+.menubutton {
+  display: flex;
+  flex-direction: column;
+}
+
+button.menu {
+  color: white;
+  border: none;
+  background-color: black;
+  float: left;
+  /* margin-bottom: 20%;
+  padding-bottom: 40%; */
+}
+
+.addToCartButton {
+  height: 30px;
+  background-color: black;
+  border: none;
+}
+
+.removeFromCartButton {
+  border: none;
+  background-color: #222;
+}
+#trashIcon {
+  color: grey;
+}
+#trashIcon:hover {
+  color: red;
+}
+
+.App .logo {
+  width: 80%;
+  margin-top: -5%;
+  margin-bottom: -14%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +80,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +99,998 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.cartContainer {
+  margin: 1em;
+  border: 1px white solid;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.cartBorderWrap {
+  max-width: 95%;
+  padding: 1rem;
+  position: relative;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    pink 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    pink 100%
+  );
+  padding: 3px;
+  margin: auto;
+}
+
+/* .mycart h3 {
+  text-align: left !important;
+  margin: 0 28%;
+} */
+
+.cartColumnNames {
+  display: flex;
+  justify-content: space-between;
+}
+
+.separator {
+  width: 75%;
+  position: relative;
+  justify-self: center;
+  height: 1px;
+  background-color: white;
+  margin: 0.5em auto;
+}
+/* navbar */
+.navbar {
+  border-bottom: solid 1px #ebebeb;
+  background-color: black;
+  opacity: 0.8;
+}
+.bottom-tab-nav {
+  border-top: solid 1px #ebebeb;
+}
+.nav-link,
+.bottom-nav-link {
+  color: #55575b;
+}
+.bottom-nav-link.active {
+  color: #922c88;
+}
+.bottom-tab-label {
+  font-size: 12px;
+}
+
+.navicons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  transition-property: color;
+  transition-duration: 150ms;
+}
+
+.navicons:hover {
+  color: rgb(235, 94, 94);
+}
+
+/* dropdown */
+.main p {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: -5%;
+}
+.main .dropdown {
+  text-align: left;
+  margin-left: 5%;
+}
+/* carousel */
+.main h2 {
+  background: pink;
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    pink 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    pink 100%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    pink 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    pink 100%
+  );
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    pink 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    pink 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.Carousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.carousel-item .caption {
+  height: 15%;
+  /* text-align:center;  */
+  background-color: black;
+  color: white;
+  background-size: cover;
+  opacity: 0.8;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+}
+
+/* parlours display */
+.main .subtitle {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.parlour {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.parlour img {
+  width: 90%;
+  /* height: 250px; */
+}
+
+.parlour h1 {
+  font-size: 24px;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.parlour p {
+  margin: 5px;
+  margin-left: 5%;
+}
+
+.parlour .star {
+  color: lightcoral;
+}
+
+/* offers */
+
+.bootstrapcard {
+  background-image: linear-gradient(
+    315deg,
+    #000000 90%,
+    #ffffff 10%
+  ) !important;
+  opacity: 0.9;
+  box-shadow: 8px 8px 8px #888888;
+  border-color: rgb(240, 191, 118) !important;
+  margin: 5px;
+}
+
+.odisplay img {
+  width: 200px;
+  height: 180px;
+  margin: 0 auto;
+  padding-top: 3px !important;
+}
+
+.bootstrapcard .title {
+  font-family: "Pacifico", cursive !important;
+  margin-top: -15px;
+  font-size: 25px;
+}
+
+/* menu */
+.BootstrapCard #cards {
+  width: 100%;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+}
+#drinkCard {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+#icecreamCard,
+#drinkCard,
+#icesCard,
+#popCard {
+  width: 100% !important;
+  margin-left: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(183, 224, 242, 1) 0%,
+    rgb(241, 186, 210) 48%,
+    rgba(183, 224, 242, 1) 100%
+  );
+  box-shadow: 2px 2px 20px pink !important;
+}
+
+.BootstrapCard .name {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.BootstrapCard .item {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#popCard {
+  grid-row-start: 4;
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+#icesCard {
+  grid-row-start: 3;
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+.menubutton {
+  width: 20px;
+  color: white;
+  border: none;
+  background-color: black;
+  font-size: 27px;
+}
+/* ice-cream */
+.icecream {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+.productCard {
+  /* border: 1px white solid; */
+  /* border-radius: 1em;
+  box-shadow: 2px 2px 12px grey; */
+}
+
+.priceLine {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.priceLine p {
+  padding-right: 1.2em;
+}
+
+.productCard img {
+  width: 100%;
+  height: 350px;
+  margin-top: 10%;
+}
+
+.productCard h1 {
+  font-family: "Sigmar One", cursive;
+}
+
+.productCard p {
+  font-size: 24px;
+}
+
+.productCard .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-duration: 50ms;
+  size: 25px;
+}
+
+.icecream .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-property: color;
+  transition-duration: 50ms;
+  font-size: 1.7em;
+  color: white;
+  margin: 0 auto;
+}
+
+.icecream .cart:hover {
+  font-size: 30px;
+}
+
+.offers .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-property: color;
+  transition-duration: 50ms;
+  font-size: 1.7em;
+  color: white;
+  margin: 0 auto;
+}
+
+/* popsicles */
+.popsicles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popsicles img {
+  width: 100%;
+  height: 350px;
+  margin-top: 10%;
+}
+
+.popsicles h1 {
+  font-family: "Sigmar One", cursive;
+}
+
+.popsicles p {
+  font-size: 24px;
+}
+
+.popsicles .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-property: color;
+  transition-duration: 50ms;
+  font-size: 1.7em;
+  color: white;
+  margin: 0 auto;
+}
+
+.popsicles .cart:hover {
+  font-size: 30px;
+  color: red;
+}
+
+/* drinks */
+.drinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.drinks img {
+  width: 100%;
+  height: 350px;
+  margin-top: 10%;
+}
+
+.drinks h1 {
+  font-family: "Sigmar One", cursive;
+}
+
+.drinks p {
+  font-size: 24px;
+}
+
+.drinks .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-property: color;
+  transition-duration: 50ms;
+  font-size: 1.7em;
+  color: white;
+  margin: 0 auto;
+}
+
+.drinks .cart:hover {
+  font-size: 30px;
+  color: red;
+}
+
+/* italianices */
+
+.italianices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.italianices img {
+  width: 100%;
+  height: 300px;
+  margin-top: 10%;
+}
+
+.italianices h1 {
+  font-family: "Sigmar One", cursive;
+  font-size: 35px;
+}
+
+.italianices p {
+  font-size: 24px;
+}
+
+.italianices .cart {
+  padding-left: 8px;
+  transition-property: font-size;
+  transition-property: color;
+  transition-duration: 50ms;
+  font-size: 1.7em;
+  color: white;
+  margin: 0 auto;
+}
+
+.italianices .cart:hover {
+  font-size: 30px;
+  color: red;
+}
+
+/* footer */
+
+.footer {
+  margin: 10px;
+  opacity: 0.8;
+  padding-bottom: 15%;
+}
+
+.footer hr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  margin-top: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.footer h4 {
+  margin-top: 10px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.footer img {
+  height: 100px;
+  width: 100px;
+}
+
+/* cart */
+.cartLine {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px white;
+  text-align: left;
+}
+/*About*/
+.About h1 {
+  /* display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center; */
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  background: linear-gradient(
+    -45deg,
+    #4bc0c8 25%,
+    pink 25%,
+    pink 50%,
+    #4bc0c8 50%,
+    #4bc0c8 75%,
+    pink 75%,
+    pink
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
+}
+
+.About p {
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+  margin: 5%;
+  text-align: center;
+  text-shadow: 2px 2px 4px pink;
+}
+
+.About img {
+  width: 100%;
+  height: 200px;
+}
+
+
+
+.namecard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.namecard img {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.namecard .title {
+  color: black;
+  font-family: "Besley", serif;
+  font-size: 25px;
+}
+.namecard p {
+  color: black;
+}
+h4.Footer {
+  margin-top: 8%;
+  margin-bottom: 20%;
+  position: fixed;
+}
+
+.modal-body {
+  text-align: center;
+}
+.modal-header {
+  justify-content: center !important;
+}
+
+.modal-body span {
+  font-size: 30px;
+}
+
+button#checkoutbutton {
+  background-color: grey !important;
+}
+
+@media screen and (min-width: 768px) {
+  .App .logo {
+    width: 60%;
+    margin-top: -10%;
+    padding-bottom: -15%;
+  }
+
+  .footer {
+    margin: 10px;
+    opacity: 0.8;
+    padding-bottom: 9%;
+  }
+
+  .Carousel {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .parlour img {
+    width: 600px;
+    height: 430px;
+    margin: 0 auto;
+  }
+
+  .cartLine p {
+    font-size: 0.7em;
+  }
+
+  .cartContainer {
+    margin: 1em;
+    border: 1px white solid;
+    padding: 2rem;
+    background: #222;
+    color: white;
+  }
+
+  .About img {
+    width: 66%;
+  }
+
+  .About h1 {
+    font-size: 40px;
+  }
+
+  .namecard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+  }
+}
+.cartBorderWrap {
+  max-width: 300px;
+  padding: 1rem;
+  position: relative;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    pink 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    pink 100%
+  );
+  padding: 3px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .App .logo {
+    width: 60%;
+    margin-top: -10%;
+    margin-bottom: -15%;
+  }
+
+  .Carousel {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    width: 60%;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  .parlour img {
+    width: 600px;
+    height: 430px;
+    margin: 0 auto;
+  }
+
+  .parlour h1 {
+    margin: 5px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 0%;
+  }
+
+  .parlour p {
+    margin: 5px;
+    margin-left: 0%;
+  }
+  .icecream img {
+    width: 600px;
+    height: 500px;
+    margin-top: 10%;
+  }
+
+  .popsicles img {
+    width: 600px;
+    height: 500px;
+    margin-top: 10%;
+  }
+
+  .drinks img {
+    width: 600px;
+    height: 550px;
+    margin-top: 10%;
+  }
+
+  .italianices img {
+    width: 600px;
+    height: 500px;
+    margin-top: 10%;
+  }
+
+  .bootstrapcard {
+    margin: 20px;
+  }
+
+  .About img {
+    width: 70%;
+  }
+
+  .About h1 {
+    font-size: 40px;
+  }
+
+  .button menu {
+    margin-bottom: 20%;
+  }
+
+  .BootstrapCard #cards {
+    width: 90% !important;
+    margin: 30px !important;
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+  }
+  #drinkCard {
+    width: 90% !important;
+    margin: 30px !important;
+  }
+
+  #icecreamCard,
+  #drinkCard,
+  #icesCard,
+  #popCard {
+    width: 90% !important;
+    margin: 30px !important;
+  }; 
+
+  .icecream img {
+    width: 600px;
+    height: 500px;
+  }
+
+  .popsicles img {
+    width: 600px;
+    height: 500px;
+  }
+
+  .drinks img {
+    width: 600px;
+    height: 550px;
+  }
+
+  .italianices img {
+    width: 600px;
+    height: 500px;
+  }
+  .Footer {
+    /* margin-top: 50%;
+    margin-bottom: -20%; */
+    margin: 50% !important;
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .App .logo {
+    width: 42%;
+    margin-top: -10%;
+    margin-bottom: -14%;
+  }
+
+  .Carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-item img {
+    width: 50%;
+    height: 450px;
+    margin: 0 auto;
+  }
+
+  .parlour img {
+    width: 550px;
+    height: 420px;
+    margin: 0 auto;
+  }
+  .parlour h1 {
+    margin: 5px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 0%;
+  }
+
+  .BootstrapCard #cards {
+    width: 85% !important;
+    margin: 20px !important;
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+  }
+  #drinkCard {
+    width: 85% !important;
+    margin-left: 20px !important;
+  }
+  #icecreamCard,
+  #drinkCard,
+  #icesCard,
+  #popCard {
+    width: 85% !important;
+    margin-left: 100px !important;
+    background: linear-gradient(
+      180deg,
+      rgba(183, 224, 242, 1) 0%,
+      rgb(241, 186, 210) 48%,
+      rgba(183, 224, 242, 1) 100%
+    );
+    box-shadow: 2px 2px 20px pink !important;
+  }
+
+  .menubutton {
+    width: 25px;
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: 45px;
+  }
+
+  .popsicles img {
+    width: 600px;
+    height: 550px;
+    margin-top: 10%;
+  }
+
+  .italianices img {
+    width: 550px;
+    height: 500px;
+    margin-top: 10%;
+  }
+
+  .team {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .namecard img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .footer {
+    margin: 20px;
+    padding-bottom: 7%;
+  }
+
+  .footer hr {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .About .star{
+    width:40%; 
+  }
+
+
+}
+@media screen and (min-width: 1440px) {
+  .App .logo {
+    width: 33%;
+    margin-top: -9%;
+    margin-bottom: -10%;
+  }
+  .offers {
+    margin: 0 auto;
+  }
+
+  .bootstrapcard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+  }
+  .About h1 {
+    font-size: 40px;
+  }
+
+
+  .About img {
+    width: 40%;
+    height: 220px;
+  }
+
+  .About .star{
+    width:40%; 
+  }
+
+  .parlour p {
+    margin: 7px;
+    margin-left: 0%;
+  }
+
+  .popsicles img {
+    width: 600px;
+    height: 550px;
+  }
+
+  .About img {
+    width: 30%;
+    height: 230px;
+  }
+
+  .namecard img {
+    width: 66%;
+    height: 290px;
+  }
+  .italianices img {
+    width: 550px;
+    height: 500px;
+  }
+  .App .logo {
+    width: 33%;
+    margin-top: -9%;
+    margin-bottom: -10%;
+  }
+  .Carousel {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .carousel-item img {
+    width: 40%;
+    height: 430px;
+    margin: 0 auto;
+  }
+  .parlour img {
+    /* width: 49%; */
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .parlour h1 {
+    margin: 5px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 0%;
+  }
+  .parlour p {
+    margin: 10px;
+    margin-left: 0%;
+  }
+  
+  .BootstrapCard #cards {
+    width: 90% !important;
+  }
+  #drinkCard {
+    width: 90% !important; 
+  }
+  #icecreamCard,
+  #drinkCard,
+  #icesCard,
+  #popCard {
+    width: 90% !important;
+    margin-left: 100px !important;
+  }
+
+  .BootstrapCard .name {
+    font-size: 50px;
+    margin-top:50px; 
+  }
+  
+  .BootstrapCard .item {
+    font-size:40px; 
+    margin-top:20px; 
+  }
+
+  .menubutton {
+    width: 25px;
+    color: white;
+    border: none;
+    background-color: black;
+    font-size: 60px;
+  }
+
+  .About h1 {
+    font-size: 40px;
+  }
+
+  .About .star{
+    width:30%; 
+    height: 250px;
+  }
+
+  .namecard img {
+    width: 66%;
+    height: 300px;
+  }
+
+  .parlour p {
+    margin: 10px;
+    margin-left: 0%;
   }
 }
