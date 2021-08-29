@@ -831,8 +831,8 @@ button#checkoutbutton {
   #drinkCard,
   #icesCard,
   #popCard {
-    width: 90% !important;
-    margin: 30px !important;
+    width: 90% ;
+    margin: 30px;
   }; 
 
   .icecream img {
@@ -938,6 +938,13 @@ button#checkoutbutton {
     height: 500px;
     margin-top: 10%;
   }
+
+  .icecream img {
+    width: 550px !important;
+    height: 500px !important;
+    margin-top: 10%;
+  }
+
 
   .team {
     display: flex;
@@ -1065,6 +1072,12 @@ button#checkoutbutton {
     margin-left: 100px !important;
   }
 
+  .icecream img {
+    width: 550px !important;
+    height: 500px !important;
+    margin-top: 5%;
+  }
+
   .BootstrapCard .name {
     font-size: 50px;
     margin-top:50px; 
@@ -1100,5 +1113,10 @@ button#checkoutbutton {
   .parlour p {
     margin: 10px;
     margin-left: 0%;
+  }
+
+  .footer hr {
+    margin-top: 80px;
+    margin-bottom: 40px;
   }
 }
