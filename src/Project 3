@@ -304,6 +304,10 @@ button.menu {
 }
 
 /* menu */
+.productCard {
+    margin-top: 60px;
+    }
+    
 .BootstrapCard #cards {
   width: 100%;
   margin: 0 !important;
@@ -364,6 +368,11 @@ button.menu {
   margin: 10px;
   flex-direction: column;
   gap: 20px;
+}
+.productCard {
+  /* border: 1px white solid; */
+  /* border-radius: 1em;
+  box-shadow: 2px 2px 12px grey; */
 }
 
 .priceLine {
@@ -583,6 +592,10 @@ button.menu {
 }
 /*About*/
 .About h1 {
+  /* display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center; */
   font-weight: normal;
   width: 100%;
   text-align: center;
@@ -962,9 +975,6 @@ button#checkoutbutton {
     width:40%; 
   }
 
-  .productCard {
-    margin-top: 5rem;
-  }
 
 }
 @media screen and (min-width: 1440px) {
@@ -1036,6 +1046,7 @@ button#checkoutbutton {
     margin: 0 auto;
   }
   .parlour img {
+    /* width: 49%; */
     height: 500px;
     margin: 0 auto;
   }
