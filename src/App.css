@@ -918,22 +918,27 @@ button#checkoutbutton {
     font-size: 45px;
   }
 
+  .drinks img {
+    width: 600px;
+    height: 580px;
+    margin-top: -5%;
+  }
   .popsicles img {
     width: 600px;
     height: 550px;
-    margin-top: 10%;
+    margin-top: -5%;
   }
 
   .italianices img {
     width: 550px;
     height: 500px;
-    margin-top: 10%;
+    margin-top: -5%;
   }
 
   .icecream img {
     width: 550px !important;
     height: 500px !important;
-    margin-top: 10%;
+    margin-top: -10%;
   }
 
 
